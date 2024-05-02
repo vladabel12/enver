@@ -1,0 +1,56 @@
+.why{
+    display: flex;
+    justify-content: center;
+    padding: 0 24rem;
+    &__image-container{
+        position: relative;
+        display: inline-block;
+    }
+    &__button{
+        padding: 51rem;
+        background-color: var(--hover-color);
+        border-radius: 50%;
+        max-width: 224rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include tablet{
+            padding: 20rem;
+        }
+    }
+    &__title{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50rem;
+        @include tablet-small{
+            flex-direction: column;
+        }
+    }
+    &__main-title{
+        max-width: 588rem;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 60rem;
+        line-height: 117%;
+        color: var(--c-text-white);
+        @include tablet{
+            font-size: 50rem;
+        }
+        @include mobile{
+            font-size: 36rem;
+        }
+    }
+    &__desc{
+        max-width: 588rem;
+        font-family: var(--ff);
+        font-weight: 400;
+        font-size: 21rem;
+        line-height: 186%;
+        letter-spacing: -0.03em;
+        color: var(--links-color);
+        @include mobile{
+            font-size: 16rem;
+        }
+    }
+}

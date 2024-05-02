@@ -1,0 +1,57 @@
+.welcome{
+    &__container{
+        margin: 0 35rem 150rem 120rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include tablet{
+            margin: 26rem 0 140rem 24rem;
+            flex-direction: column;
+        }
+    }
+    &__right{
+        max-width: 582rem;
+    }
+    &__title{
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 80rem;
+        line-height: 105%;
+        color: var(--c-text-white);
+        margin-bottom: 24rem;
+        @include desktop-small{
+            font-size: 50rem;
+        }
+        @include tablet{
+            font-size: 42rem;
+        }
+    }
+    &__desc{
+        font-family: var(--ff);
+        font-weight: 400;
+        font-size: 21rem;
+        line-height: 186%;
+        letter-spacing: -0.03em;
+        color: var(--links-color);
+        margin-bottom: 50rem;
+        @include desktop-small{
+            font-size: 17rem;
+        }
+        @include tablet{
+            font-size: 16rem;
+        }
+    }
+    &__link-button{
+        font-family: var(--ff);
+        font-weight: 700;
+        font-size: 20rem;
+        color: var(--c-text-white);
+        border-radius: 4rem;
+        background: var(--hover-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 204rem;
+        padding: 16rem 27rem 15rem 27rem;
+    }
+}

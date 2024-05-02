@@ -1,0 +1,49 @@
+.contact{
+    margin-top: 168rem;
+    margin-bottom: 50rem;
+    background: rgba(30, 30, 32, 0.5);
+    padding: 187rem 120rem 189rem 120rem;
+    @include desktop-small{
+        padding: 187rem 24rem 189rem 24rem;
+    }
+    @include tablet{
+        padding: 80rem 24rem 80rem 24rem;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include tablet{
+            display: grid;
+            grid-template-columns: auto;
+        }
+    }
+    &__title{
+        max-width: 826rem;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 60rem;
+        color: var(--c-text-white);
+        @include desktop-small{
+            font-size: 50rem;
+            max-width: 756rem;
+        }
+        @include tablet{
+            font-size: 40rem;
+            margin-bottom: 50rem;
+        }
+        @include mobile{
+            font-size: 36rem;
+        }
+    }
+    &__button{
+        font-family: var(--ff);
+        font-weight: 700;
+        font-size: 21rem;
+        max-width: 202rem;
+        color: var(--c-text-white);
+        padding: 16rem 49rem;
+        border-radius: 4rem;
+        background: #5454d4;
+    }
+}
