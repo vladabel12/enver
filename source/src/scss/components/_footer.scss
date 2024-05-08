@@ -1,5 +1,7 @@
 .footer {
-	padding: 0 120rem 100rem 120rem;
+	display: flex;
+	justify-content: center;
+	padding: 0 0 100rem 0;
 	@include desktop-small{
 		padding: 0 24rem 50rem 24rem;
 	}
@@ -7,6 +9,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		gap: 200rem;
+		@include desktop-small{
+			gap: 70rem;
+		}
 		@include tablet{
 			flex-direction: column;
 		}

@@ -2,17 +2,26 @@
     margin-top: 168rem;
     margin-bottom: 50rem;
     background: rgba(30, 30, 32, 0.5);
-    padding: 187rem 120rem 189rem 120rem;
+    padding: 187rem 0 189rem 0;
     @include desktop-small{
         padding: 187rem 24rem 189rem 24rem;
     }
     @include tablet{
         padding: 80rem 24rem 80rem 24rem;
     }
+    &__container-info{
+        display: flex;
+        justify-content: center;
+    }
     &__container{
+        //max-width: 1200rem;
         display: flex;
         justify-content: space-between;
+        gap: 173rem;
         align-items: center;
+        @include desktop-small{
+            gap: 100rem;
+        }
         @include tablet{
             display: grid;
             grid-template-columns: auto;

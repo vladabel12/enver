@@ -5,6 +5,18 @@
   }
 }
 
+@mixin desktop-m {
+  @media (max-width: $desktop-m) {
+    @content;
+  }
+}
+
+@mixin desktop-xs {
+  @media (max-width: $desktop-xs) {
+    @content;
+  }
+}
+
 @mixin tablet-small {
   @media (max-width: $tablet-small) {
     @content;

@@ -111,3 +111,18 @@ gulp.task('watch:dev', function () {
 	gulp.watch('./src/files/**/*', gulp.parallel('files:dev'));
 	gulp.watch('./src/js/**/*.js', gulp.parallel('js:dev'));
 });
+
+// JavaScript
+const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}, { threshold: 0.5 });
+
+sections.forEach(section => {
+    observer.observe(section);
+});
